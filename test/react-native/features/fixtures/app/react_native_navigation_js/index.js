@@ -10,8 +10,7 @@ import Bugsnag from '@bugsnag/react-native';
 import BugsnagReactNativeNavigation from '@bugsnag/plugin-react-native-navigation';
 
 NativeModules.BugsnagTestInterface.startBugsnag({
-  apiKey: '12312312312312312312312312312312',
-  endpoint: 'http://bs-local.com:9339',
+  apiKey: 'b161f2dbabe3204527bbe5ed4b9334a4',
   autoTrackSessions: false
 }, () => {
   Bugsnag.start({

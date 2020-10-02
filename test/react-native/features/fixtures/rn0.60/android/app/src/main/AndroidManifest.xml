@@ -23,11 +23,7 @@
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
       <meta-data android:name="com.bugsnag.android.API_KEY"
-          android:value="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456"/>
-      <meta-data android:name="com.bugsnag.android.ENDPOINT_NOTIFY"
-             android:value="http://bs-local.com:9339"/>
-      <meta-data android:name="com.bugsnag.android.ENDPOINT_SESSIONS"
-             android:value="http://bs-local.com:9339"/>
+          android:value="b161f2dbabe3204527bbe5ed4b9334a4"/>
     </application>
 
 </manifest>

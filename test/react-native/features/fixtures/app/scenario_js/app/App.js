@@ -11,8 +11,7 @@ import {
 } from 'react-native'
 
 let getDefaultConfiguration = () => { return {
-    apiKey: '12312312312312312312312312312312',
-    endpoint: 'http://bs-local.com:9339',
+    apiKey: 'b161f2dbabe3204527bbe5ed4b9334a4',
     autoTrackSessions: false
   }
 }
