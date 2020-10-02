@@ -21,42 +21,6 @@ steps:
 
   - wait
 
-  - label: ':android: Build React-native 0.60 apk'
-    env:
-      REACT_NATIVE_VERSION: "rn0.60"
-    plugins:
-      - docker-compose#v3.3.0:
-          run: react-native-android-builder
-    artifact_paths:
-      - build/rn0.60.apk
-
-  - label: ':ios: Build React-native 0.60 ipa'
-    agents:
-      queue: "opensource-mac-rn"
-    env:
-      REACT_NATIVE_VERSION: rn0.60
-    artifact_paths: build/rn0.60.ipa
-    commands:
-      - npm run test:build-react-native-ios
-
-  - label: ':android: Build React-native 0.63 apk'
-    env:
-      REACT_NATIVE_VERSION: "rn0.63"
-    plugins:
-      - docker-compose#v3.3.0:
-          run: react-native-android-builder
-    artifact_paths:
-      - build/rn0.63.apk
-
-  - label: ':ios: Build React-native 0.63 ipa'
-    agents:
-      queue: "opensource-mac-rn"
-    env:
-      REACT_NATIVE_VERSION: rn0.63
-    artifact_paths: build/rn0.63.ipa
-    commands:
-      - npm run test:build-react-native-ios
-
   - label: ':android: Build react-navigation 0.60 apk'
     env:
       REACT_NATIVE_VERSION: "rn0.60"
